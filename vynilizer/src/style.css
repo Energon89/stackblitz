@@ -1,0 +1,431 @@
+body {
+  background: rgb(67, 41, 128);
+  color: white;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background: rgb(67, 41, 128);
+  margin: 0px, auto;
+  padding: 20px 0 0 0;
+  position: relative;
+  z-index: 1;
+}
+
+.base {
+  z-index: 2;
+  width: 540px;
+  height: 470px;
+  border-radius: 8px;
+  background: #a67c52;
+  margin: 0px auto;
+  position: relative;
+  border: 1px solid black;
+  background: linear-gradient(135deg, #a67c52 81%, #7d5d3e 81%);
+}
+
+.base:before {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  border-radius: 200px;
+  width: 400px;
+  height: 400px;
+  background: black;
+  background: radial-gradient(
+    white 5%,
+    gray 50%,
+    black 80%
+  ); /* Standard syntax */
+  background: -webkit-radial-gradient(
+    white 5%,
+    gray 50%,
+    black 80%
+  ); /* Safari 5.1-6.0 */
+  background: -o-radial-gradient(
+    white 5%,
+    gray 50%,
+    black 80%
+  ); /* For Opera 11.6-12.0 */
+  background: -moz-radial-gradient(white 5%, gray 50%, black 80%);
+  left: 10px;
+  top: 10px;
+  box-shadow: 0px 0px 55px black inset;
+}
+
+.slider {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  display: inline-block;
+  width: 20px;
+  height: 150px;
+  padding: 0;
+}
+
+.slider input {
+  width: 150px;
+  height: 20px;
+  margin: 0;
+  transform-origin: 75px 75px;
+  transform: rotate(-90deg);
+}
+
+.buttons {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 100;
+}
+
+.toneArm {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 60px;
+  border-radius: 20px 20px 60px 60px;
+  background: linear-gradient(black 10%, #9b9b9b 10%);
+  z-index: 100;
+  transform: translateX(60px) translateY(-15px);
+  box-shadow: 0 0 0 1px black;
+  z-index: 5;
+}
+
+.toneArm:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 70px;
+  height: 20px;
+  background: #9b9b9b;
+  z-index: 100;
+  transform: translateY(80px) translateX(-15px) rotate(10deg);
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+.toneArmTwo {
+  display: block;
+  position: absolute;
+  height: 280px;
+  width: 15px;
+  background: #9b9b9b;
+  border: 1px solid black;
+  transform: translateY(40px) translateX(71px);
+  z-index: 100;
+}
+
+.toneArmTwo:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 100;
+  height: 80px;
+  width: 30px;
+  border: 1px solid black;
+  background: #626063;
+  background: linear-gradient(#626063 20%, #464447 80%);
+  transform: translateY(250px) translateX(-8px);
+}
+
+.shader {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background: #7d5d3e;
+  border-radius: 8px;
+  bottom: 0;
+  right: 0;
+}
+
+.platter:after {
+  position: absolute;
+  content: "";
+  z-index: 0;
+  width: 115px;
+  height: 115px;
+  border-radius: 57.5px;
+  background: #ffffcc;
+  top: 115px;
+  left: 115px;
+  /*   boxShadow */
+  box-shadow: 0px 0px 2px 0px black, 0 0 10px black inset,
+    0px 0px 0px 20px #1a1a1a, 2px 0px 0px 20px darkgrey, 0 0 0 40px #1a1a1a,
+    -1px -1px 0px 40px darkgrey, 0 0 0 70px #1a1a1a, -1px 1px 0 70px darkgrey,
+    0 0 0 100px #1a1a1a, 1px 1px 0 100px darkgrey;
+  -wbekit-box-shadow: 0px 0px 2px 0px black, 0 0 10px black inset,
+    0px 0px 0px 20px #1a1a1a, 2px 0px 0px 20px darkgrey, 0 0 0 40px #1a1a1a,
+    -1px -1px 0px 40px darkgrey, 0 0 0 70px #1a1a1a, -1px 1px 0 70px darkgrey,
+    0 0 0 100px #1a1a1a, 1px 1px 0 100px darkgrey;
+  -o-box-shadow: 0px 0px 2px 0px black, 0 0 10px black inset,
+    0px 0px 0px 20px #1a1a1a, 2px 0px 0px 20px darkgrey, 0 0 0 40px #1a1a1a,
+    -1px -1px 0px 40px darkgrey, 0 0 0 70px #1a1a1a, -1px 1px 0 70px darkgrey,
+    0 0 0 100px #1a1a1a, 1px 1px 0 100px darkgrey;
+  -moz-box-shadow: 0px 0px 2px 0px black, 0 0 10px black inset,
+    0px 0px 0px 20px #1a1a1a, 2px 0px 0px 20px darkgrey, 0 0 0 40px #1a1a1a,
+    -1px -1px 0px 40px darkgrey, 0 0 0 70px #1a1a1a, -1px 1px 0 70px darkgrey,
+    0 0 0 100px #1a1a1a, 1px 1px 0 100px darkgrey;
+}
+
+.platter:before {
+  position: absolute;
+  content: "";
+  z-index: 30;
+  height: 15px;
+  width: 15px;
+  border-radius: 15px;
+  background: black;
+  top: 165px;
+  left: 165px;
+
+  /*   Gradient */
+  background: -webkit-radial-gradient(darkgrey, black); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(darkgrey, black); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(
+    red,
+    yellow,
+    green
+  ); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(darkgrey 5%, black 40%); /* Standard syntax */
+}
+
+.platter {
+  position: absolute;
+  content: "";
+  z-index: 10;
+  height: 350px;
+  width: 350px;
+  border-radius: 175px;
+  background: #1a1a1a;
+  border: 3px solid lightgrey;
+  top: 32px;
+  left: 32px;
+  transition: transform 2s ease-out;
+}
+
+.platter-spin {
+  transform: rotate(1000deg);
+  animation: easePlatter 2s ease-in, rotatePlatter 1s infinite linear;
+  transition: transform 2s ease-out;
+}
+
+.toneBase {
+  position: absolute;
+  height: 160px;
+  width: 160px;
+  border-radius: 100px;
+  background: #4d4d4d;
+  border: 1px solid black;
+  right: 12px;
+  top: 20px;
+  background: linear-gradient(135deg, #4d4d4d 60%, #333333 60%);
+  transition: transform 0.1s ease-in-out;
+  z-index: 100;
+}
+
+.rotate {
+  transform: rotate(25deg);
+  transition: transform 0.1s ease-in-out;
+}
+
+.tonearm-movement {
+  animation: tone-move 10s ease-in-out;
+}
+
+.toneBase:before {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  background: #b3b3b3;
+  left: 28px;
+  top: 27px;
+  border: 3px double black;
+}
+
+.notches {
+  position: absolute;
+  width: 5px;
+  height: 115px;
+  border: 1px solid black;
+  background: #666666;
+  right: 75px;
+  top: 21px;
+}
+
+.notches:after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 115px;
+  border: 1px solid black;
+  background: #999999;
+  right: 0px;
+  top: 0px;
+  transform: rotate(30deg);
+}
+
+.notches:before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 115px;
+  border: 1px solid black;
+  background: #666666;
+  right: 0px;
+  top: 0px;
+  transform: rotate(60deg);
+}
+
+.notches2 {
+  position: absolute;
+  width: 5px;
+  height: 115px;
+  border: 1px solid black;
+  background: #999999;
+  right: 75px;
+  top: 21px;
+  transform: rotate(-30deg);
+}
+
+.notches2:after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 115px;
+  border: 1px solid black;
+  background: #999999;
+  right: 0px;
+  top: 0px;
+  transform: rotate(120deg);
+}
+
+.notches2:before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 115px;
+  border: 1px solid black;
+  background: #666666;
+  right: 0px;
+  top: 0px;
+  transform: rotate(150deg);
+}
+
+/*Key Frame Animations*/
+@keyframes rotatePlatter {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes easePlatter {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes tone-move {
+  0% {
+    transform: rotate(0);
+  }
+  20% {
+    transform: rotate(30deg);
+  }
+  80% {
+    transform: rotate(36deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.output {
+  margin: 15px;
+  font-size: 24px;
+  font-variant: small-caps;
+  text-align: center;
+  width: 150px;
+}
+
+.container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0%;
+  left: 60px;
+  z-index: 100;
+}
+/*switch*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider1 {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider1:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider1 {
+  background-color: #2196f3;
+}
+
+input:focus + .slider1 {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider1:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* .text {
+  position: absolute;
+  color: rgb(28, 121, 207);
+  z-index: 100;
+  font-size: 60px;
+  font-variant: small-caps;
+  top: 20px;
+  left: 170px;
+} */

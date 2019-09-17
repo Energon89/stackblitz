@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JS "Пятнашки"</title>
+    <link rel="stylesheet" href="../src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Игра "Пятнашки"</h1>
+      <p>
+        Чтобы начать играть введите желаемый размер игрового поля и нажмите
+        кнопку "Новая игра". После этого появится поле, фишки на котором
+        переставляются при клике мышью.
+      </p>
+      <div class="game-field">
+        <label for="fieldSize"
+          >Размер игрового поля (min 3х3, max 10х10):</label
+        >
+        <input
+          type="number"
+          min="3"
+          max="10"
+          id="fieldSize"
+          class="fieldSize"
+          value="4"
+        />
+        <button class="generateField">Новая игра</button>
+      </div>
+      </br>
+      <canvas class="myCanvas"></canvas>
+    </div>
+
+    <script type="module" src="../src/modules/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: #282838;
+  font-family: "Boogaloo", "Times New Roman", sans-serif;
+  background: #101012
+    url("https://mbotaswbcw-flywheel.netdna-ssl.com/wp-content/uploads/sites/6/2017/07/chalkboard-background.png")
+    no-repeat top center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+#holder {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#content {
+  margin-top: 20px;
+}
+
+#afs #content {
+  margin-top: 30px;
+}
+
+#afd #holder {
+  width: 720px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: normal;
+  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 1px;
+}
+
+#domainname a {
+  margin: 30px 0 23px 30px;
+  font-size: 32px;
+  font-weight: normal;
+  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 1px;
+  display: block;
+  position: relative;
+  text-decoration: none;
+}
+
+#domainname a:hover {
+  text-decoration: underline;
+}
+
+#linkIt {
+  font-size: 26px;
+  font-weight: normal;
+  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 1px;
+  display: block;
+  position: relative;
+  text-decoration: none;
+}
+
+#linkIt:hover {
+  text-decoration: underline;
+}
+
+#tcHolder {
+  padding: 20px;
+  margin: 20px 0 60px;
+  border: 4px solid #fff;
+  border: 4px solid rbga(255, 255, 255, 0.8);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+#copyright {
+  clear: both;
+  text-align: center;
+}
+
+.rsHolder {
+  float: left;
+  width: 300px;
+}
+
+.adsHolder {
+  width: 640px;
+  margin: 0 0 0 auto;
+}
+
+.norl .adsHolder {
+  margin: 0 auto;
+}
+
+#copyright {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #aaa;
+  width: 960px;
+  margin: 20px auto 0;
+  color: #aaa;
+  font-size: 15px;
+}
+
+#copyright a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+#sale_link,
+#sale_link_bold,
+#sale_link_below {
+  color: #e57921;
+  font-size: 25px;
+}
+
+#sale_link a:hover,
+#sale_link_bold a:hover,
+#sale_link_below a:hover {
+  color: #fff;
+}
+
+.d_,
+a {
+  color: #ffffff;
+}
+.d_,
+a {
+  font-size: 22px;
+  font-weight: bold;
+}
+a {
+  -webkit-tap-highlight-color: initial;
+}
+.fa_ {
+  padding: 0.5em;
+}
+.ga_ {
+  border-left: 7px solid transparent;
+}
+.d_.popstripeRs {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border: 0;
+  margin: 0;
+  border-top: 1px solid #6f6f6f;
+  border-bottom: 1px solid #565656;
+  background-color: #5f5f5f;
+  color: white;
+}
+.d_.popstripeRs:hover {
+  border-top: 1px solid #565656;
+  background-color: #565656;
+  text-decoration: underline;
+}
+.ja_ {
+  position: absolute;
+  top: 0px;
+  right: 0.5em;
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: auto 1em;
+  height: 100%;
+  width: 25%;
+}
