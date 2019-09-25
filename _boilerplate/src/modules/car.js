@@ -1,3 +1,0 @@
-function Car() {}
-
-export { Car };
